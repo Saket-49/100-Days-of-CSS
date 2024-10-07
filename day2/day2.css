@@ -1,0 +1,100 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.cnt {
+    background-color: #3faf82;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 500px;
+}
+.fh {
+    height: 100px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.l1 {
+    height: 15px;
+    width: 120px;
+    background-color: white;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    position: absolute;
+    box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.2);
+    transform: translateY(-25px);
+    animation: firstanimate 2s forwards;
+    animation-delay: 2s;
+}
+.l2 {
+    height: 15px;
+    width: 120px;
+    background-color: white;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    position: absolute;
+    box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.2);
+    animation: secanimate 2s forwards;
+    animation-delay: 2s;
+}
+.l3 {
+    height: 15px;
+    width: 120px;
+    background-color: white;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    position: absolute;
+    transform: translateY(25px);
+    box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.2);
+    animation: thirdanimate  2s forwards;
+    animation-delay: 2s;
+}
+    @keyframes firstanimate {
+        0% {
+            position: absolute;
+        }
+        50% {
+            position: absolute;  
+            transform: translate(0px);
+        }
+        100% {
+            transform: rotate(45deg);
+        }
+    }
+    @keyframes thirdanimate {
+        0% {
+            position: absolute;
+            transform: translate(25px);
+        }
+        50% {
+            position: absolute;
+            transform: translateY(0px);
+        }
+        100% {
+            transform: rotate(135deg);
+        }
+    }
+    @keyframes secanimate {
+        0% {
+            opacity: 1;
+            transform: scale(1);
+        }
+        100% {
+            opacity: 0;
+            transform: scale(0);
+        }
+    }
