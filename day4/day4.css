@@ -1,0 +1,104 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;;
+}
+.frame {
+    height: 600px;
+    width: 500px;
+    background-color: salmon;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.c1 {
+    height: 80px;
+    z-index: 2;
+    width: 80px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 10px 10px 12px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transform: scale(1);
+    align-items: center;
+    animation: c1a 2s   infinite alternate ;
+    outline: none;
+    animation-fill-mode: both;
+}
+@keyframes c1a {
+    0%{
+        transform: scale(0);
+        box-shadow: 0;
+        visibility: hidden;
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 10px 10px 12px 10px rgba(0, 0, 0, 0.3);
+        visibility: visible;
+    }
+}
+.c2{
+    height: 50px;
+    z-index: 3;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 10px 10px 12px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    animation: c2a 2s infinite alternate .3s;
+    outline: none;
+    animation-fill-mode: both;
+}
+@keyframes c2a {
+    0%{
+        transform: scale(0);
+        box-shadow: 0;
+        visibility: hidden;
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 10px 10px 12px 10px rgba(0, 0, 0, 0.3);
+        visibility: visible;
+    }
+}
+.c3{
+    height: 25px;
+    z-index: 4;
+    width: 25px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 10px 10px 12px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    animation: c3a 2s infinite alternate .7s;
+    
+}
+@keyframes c3a {
+    0%{
+        transform: scale(0);
+        box-shadow: 0;
+        visibility: hidden;
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 10px 10px 12px 10px rgba(0, 0, 0, 0.3);
+        visibility: visible;
+    }
+}
